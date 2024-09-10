@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista supermercado</title>
+    <link  rel="stylesheet" href="Dia5.css">
+</head>
+<body>
+    <h1 class="titulo">Genere su lista de supermercado Lucy</h1>
+    <label class="categorias" for="categoria">Selecciona una categoria:</label>
+    <select id="categoria">
+        <option value="Lacteos">Lacteos</option>
+        <option value="Carnes">Carnes</option>
+        <option value="Panaderia">Panaderia</option>
+        <option value="Almacen">Almacen</option>
+        <option value="Limpieza">Limpieza</option>
+        <option value="Verduleria">Verduleria</option>
+    </select>
+    <br><br>
+    <textarea class="ingresoAlimento" id="alimento" placeholder="Ingrese alimento y cantidad que desea "></textarea>
+    <button class="bton" onclick="agregarAlimento()">Agregar producto</button>
+
+    <h2 class="generarLista">Lista</h2>
+    <pre class="lista" id="listaSupermercado"></pre>
+    <button class="enviar" onclick="enviarLista()">Enviar lista</button>
+</body>
+<script src="Dia5.js"></script>
+</html>
